@@ -34,14 +34,13 @@ main {
 .welcome-area {
   width: 600px;
   margin-left: 200px;
-  /* margin-left: 250px; */
   padding: 3px 30px 10px 3px;
   display: flex;
 }
 
 h2 {
   padding: 5px 20px 5px 1px;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 20px 200px;
   display: block;
   font-family: "Georgia";
   font-size: 38px;
