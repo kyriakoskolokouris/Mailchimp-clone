@@ -1,0 +1,271 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffe01b;
+
+  overflow: hidden;
+  margin: 0;
+  font-family: Open Sans;
+}
+header {
+  top: 0%;
+  position: fixed;
+}
+.logo {
+  height: 36px;
+  padding: 15px;
+}
+main {
+  padding: 0 30px 0 30px;
+  margin-left: 10px;
+  margin-right: 100px;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.welcome-area {
+  width: 600px;
+  margin-left: 200px;
+  /* margin-left: 250px; */
+  padding: 3px 30px 10px 3px;
+  display: flex;
+}
+
+h2 {
+  padding: 5px 20px 5px 1px;
+  margin: 30px 0 20px 0;
+  display: block;
+  font-family: "Georgia";
+  font-size: 38px;
+}
+
+.form-area {
+  display: flex;
+  margin-left: 200px;
+}
+
+form {
+  width: 600px;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  padding: 18px 0 5px 0;
+  font-size: 18px;
+}
+
+.password-display {
+  padding-left: 335px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #007c89;
+  display: inline;
+}
+
+.show {
+  margin-top: 4px;
+  position: absolute;
+}
+
+.hide {
+  margin-top: 4px;
+  position: absolute;
+  visibility: hidden;
+}
+
+#password-text {
+  padding-left: 25px;
+}
+
+input {
+  margin: 0;
+  padding: 10px;
+  display: block;
+  font-size: 22px;
+  border-radius: 3px;
+  border: rgba(128, 128, 128, 0.507) solid 0.3px;
+  width: 80%;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #007c89;
+}
+
+.list-area {
+  display: flex;
+  margin: 0;
+  margin-left: 215px;
+  margin-top: 10px;
+}
+
+ul {
+  columns: 2;
+}
+
+li {
+  /* padding: 5px; */
+
+  margin-right: 3px;
+  color: #007c89;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+li span {
+  color: black;
+}
+
+.right-list {
+  margin-left: 45px;
+}
+
+#list4 {
+  padding-top: 0;
+}
+
+/* BUTTON AREA */
+
+.btn-area {
+  margin-left: 200px;
+  display: flex;
+  justify-content: baseline;
+  margin-top: 25px;
+}
+button {
+  margin-top: 12px;
+  border: 0;
+  color: #4447477c;
+  padding: 14px 22px;
+  font-size: 18px;
+  display: flex;
+  border: 1px solid rgba(128, 128, 128, 0.267);
+  background-color: white;
+  font-weight: bold;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  margin: 0 10px;
+  padding: 15px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 2px;
+  padding: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background: #007c89;
+  border: 2px solid #007c89;
+}
+
+input[type="checkbox"]:checked ~ .checkmark {
+  display: block;
+}
+
+/*  checkmark hidden when not checked) */
+.check-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .check-mark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .check-mark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox-text {
+  text-align: left;
+  display: flex;
+
+  /* padding: 10px; */
+}
+
+.breakline {
+  display: block;
+}
+
+.textarea2 {
+  display: flex;
+  position: absolute;
+  bottom: 13%;
+  margin-left: 200px;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.textarea2 a {
+  color: #007c89;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ASIDE */
+.side {
+  display: flex;
+  height: 827px;
+  width: 444px;
+  top: 0%;
+  right: 0%;
+  position: absolute;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+footer {
+  position: absolute;
+  bottom: 2%;
+  margin-left: 16px;
+  color: rgba(53, 46, 41, 0.678);
+  font-size: 11px;
+}
+
+footer a {
+  text-decoration: underline;
+}
+/* DOM MANIPULATION */
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1200px) {
+  .side {
+    display: none;
+  }
+
+  main .welcome-area .form-area .list-area .btn-area .textarea2 {
+    width: 100%;
+    margin-right: 50px;
+  }
+}

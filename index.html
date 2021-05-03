@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://use.fontawesome.com/a91d3b06c4.js"></script>
+
+    <title>MailChimp Form</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="">
+        <img src="images/mc-freddie-dark.svg" alt="logo" class="logo" />
+      </a>
+    </header>
+<!-- MAIN -->
+    <main>
+      <div class="welcome-area">
+        <span class="textarea1">
+          <h2>Welcome to Mailchimp</h2>
+          <p>
+            Find your people. Engage your customers. Build your brand. Do it all
+            with Mailchimp’s Marketing Platform. Already have an account?
+            <a>Log in</a>
+          </p>
+        </span>
+      </div>
+
+      <!-- FORMS -->
+      <div class="form-area">
+        <form action="#" method="POST">
+          <label for=""><b>Email</b></label>
+
+          <input type="email" name="email-address" class="input" required />
+
+          <label for=""><b>Username</b></label>
+
+          <input type="text" class="input" />
+
+          <label for=""
+            ><b>Password</b>
+            <span class="password-display">
+              <i class="hide fa fa-eye-slash"></i>
+              <i class="show fa fa-eye"></i>
+              <span id="password-text"> Show </span>
+            </span>
+          </label>
+
+          <input type="password" class="password" />
+        </form>
+      </div>
+
+      <!-- LIST -->
+      <div class="list-area">
+        <ul>
+          <li><span>One lowercase character </span></li>
+          <li><span>One uppercase character </span></li>
+          <li><span>One number</span></li>
+          <li class="right-list" id="list4">
+            <span>One special character </span>
+          </li>
+          <li class="right-list"><span>8 characters minimum </span></li>
+        </ul>
+      </div>
+
+      <!-- BUTTON AREA -->
+      <div class="btn-area">
+        <div class="btn">
+          <button>Sign Up</button>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" />
+          <span class="check-mark"></span>
+
+          <div class="checkbox-text">
+            <p>
+              I don't want to receive emails about new Mailchimp
+              <span class="breakline">
+                products, best practices or special offers.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+<!-- TEXT AREA -->
+      <div class="textarea2">
+        <p>
+          By clicking the "Sign Up" button, you are creating a Mailchimp
+          account, and you agree to
+          <span class="breakline">
+            Mailchimp's <a>Terms of Use</a> and <a>Privacy Policy</a>.</span
+          >
+        </p>
+      </div>
+    </main>
+    <!--3.  ASIDE -->
+    <aside>
+      <a href="">
+        <img src="images/Capture.JPG" alt="logo" class="side" />
+      </a>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+      ©2001–2021 All Rights Reserved. Mailchimp® is a registered trademark of
+      The Rocket Science Group.
+      <span class="breakline">
+        <a>Cookie Preferences </a>,<a> Privacy</a>, and <a>Terms</a>.</span
+      >
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
