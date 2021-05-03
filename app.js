@@ -1,4 +1,4 @@
-// 1. Hide/show password
+// 1. Hide/show password functionality
 
 
 const show = document.querySelector(".show");
