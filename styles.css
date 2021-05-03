@@ -182,30 +182,6 @@ input[type="checkbox"]:checked ~ .checkmark {
   display: block;
 }
 
-/*  checkmark hidden when not checked) */
-.check-mark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.checkbox input:checked ~ .check-mark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.checkbox .check-mark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
 
 .checkbox-text {
   text-align: left;
@@ -242,7 +218,7 @@ input[type="checkbox"]:checked ~ .checkmark {
   right: 0%;
   position: absolute;
   max-width: 100%;
-  /* height: auto; */
+  height: 100%;
 }
 
 footer {
